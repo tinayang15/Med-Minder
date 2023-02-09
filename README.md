@@ -5,20 +5,28 @@
 
 ## ***Description***
 ***
-#### Med-Minder is an application that allows you to personalized a list of your medications. Within each medication added, you are able to include your prescription directions. This way, you can keep track if you have taken your medication.
+#### Med-Minder is an application that allows healthcare adminstration to personalized a list of medications for each patient. Within each medication added, you are able to include prescription directions.
 
 ## ***Getting Started***
 ***
 ### Click to use Med Minder: [Med-Minder](IncludeHTMLWhenReady)
 
-### Med-Minder is a personalized list of your medications:
-* To insert your medications, click add medication.
+### Med-Minder is used to personalized a list of medications for each patient:
+* If your patient list is empty, click add patient and add patient details.
 ![Image](include Image When ready)
-* Once you are done, view your medication list.
+* If your patient list is not empty, click to each accordingly patient.
 ![Image](include Image When ready)
-* Click on your according medication and view your prescribed directions. You can check the box if you have taken your medication for the day and reset for the next day.
+* If your patient list is long, you can use the search bar to find patient name.
 ![Image](include Image When ready)
-* Once you are done taking your medication, you can click the trashcan next to your according medication. 
+* In each patient's file, you can view a medication list personalized to them.
+![Image](include Image When ready)
+* If patient's medication list is empty, to insert their medications, click add medication and insert medication details.
+![Image](include Image When ready)
+* Once you are done, view their medication list.
+![Image](include Image When ready)
+* Click on the patient's according medication and view their prescribed directions. 
+![Image](include Image When ready)
+* Once patient is done taking their medication, you can click the trashcan next to their according medication. 
 ![Image](include Image When ready)
 
 ## ***Technologies Used***
