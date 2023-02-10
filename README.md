@@ -5,7 +5,7 @@
 
 ## ***Description***
 ***
-#### Med-Minder is an application that allows healthcare adminstration to personalized a list of medications for each patient. Within each medication added, you are able to include prescription directions.
+#### Med-Minder is an application that allows healthcare administration to personalized a list of medications for each patient. Within each medication added, you are able to include prescription directions.
 
 ## ***Getting Started***
 ***
