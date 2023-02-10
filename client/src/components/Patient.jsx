@@ -1,7 +1,15 @@
-const Patient = () => {
+const Patient = ({ patients }) => {
     return (
         <div>
-            <h2>Patient Name: </h2>
+            {patients.map((patient) => (
+                <ul>
+                    <li>
+                        <p className='PatientName'>Patient Name: {patient.name}</p>
+                        <p className='PatientId'>Patient Id: {patient.id}</p>
+                    </li>
+                </ul>
+            ))}
+
         </div>
     )
 }
