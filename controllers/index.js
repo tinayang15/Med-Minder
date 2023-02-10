@@ -81,39 +81,39 @@ const getAllMedications = async (req, res) => {
     }
 }
 
-// const getMedicationById = async (req, res) => {
-//     try {
-//         const { id } = req.params;
-//         const medication = await Medication.findById(id)
-//         if (medication) {
-//             return res.status(200).json({ medication });
-//         }
-//         return res.status(404).send('Medication with the specified ID does not exists');
-//     } catch (error) {
-//         return res.status(500).send(error.message);
-//     }
-// }
+const getMedicationById = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const medication = await Medication.findById(id)
+        if (medication) {
+            return res.status(200).json({ medication });
+        }
+        return res.status(404).send('Medication with the specified ID does not exists');
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
 
-// const updateMedication = async (req, res) => {
-//     try {
-//         const medication = await Medication.findByIdAndUpdate(req.params.id, req.body, { new: true })
-//         res.status(200).json(medication)
-//     } catch (error) {
-//         return res.status(500).send(error.message);
-//     }
-// }
+const updateMedication = async (req, res) => {
+    try {
+        const medication = await Medication.findByIdAndUpdate(req.params.id, req.body, { new: true })
+        res.status(200).json(medication)
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
 
-// const deleteMedication = async (req, res) => {
-//     try {
-//         const { id } = req.params;
-//         const deleted = await Medication.findByIdAndDelete(id)
-//         if (deleted) {
-//             return res.status(200).send('Medication deleted');
-//         }
-//     } catch (error) {
-//         return res.status(500).send(error.message);
-//     }
-// }
+const deleteMedication = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const deleted = await Medication.findByIdAndDelete(id)
+        if (deleted) {
+            return res.status(200).send('Medication deleted');
+        }
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
 
 module.exports = {
     createPatient,
@@ -123,7 +123,7 @@ module.exports = {
     deletePatient,
     createMedication,
     getAllMedications,
-    // getMedicationById,
-    // updateMedication,
-    // deleteMedication,
+    getMedicationById,
+    updateMedication,
+    deleteMedication,
 }
