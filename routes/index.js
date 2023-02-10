@@ -18,14 +18,14 @@ router.delete('/patients/:id', controllers.deletePatient)
 
 
 
-router.post('/patients/:id/medications', controllers.createMedication)
+router.post('/patients/medications/:id', controllers.createMedication)
 
-router.get('/patient/:id/medications', controllers.getAllMedications)
+router.get('/patients/medications/:id', controllers.getAllMedications)
 
-router.get('/patients/:id/medications/:id', controllers.getMedicationById)
+// router.get('/patients/:id/medications/:id', controllers.getMedicationById)
 
-router.put('/patients/:id/medications/:id', controllers.updateMedication)
+// router.put('/patients/:id/medications/:id', controllers.updateMedication)
 
-router.delete('/patients/:id/medications/:id', controllers.deleteMedication)
+// router.delete('/patients/:id/medications/:id', controllers.deleteMedication)
 
 module.exports = router;
