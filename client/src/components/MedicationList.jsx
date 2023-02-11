@@ -1,9 +1,10 @@
 import Medication from './Medication'
+// import { Link } from 'react-router-dom'
 const MedicationList = () => {
     return (
         <div>
-            <h1>Medication List</h1>
-            <p><Medication /></p>
+            <h2 className='MedicationList'>Medication List</h2>
+            {/* <p><Medication /></p> */}
         </div>
     )
 }

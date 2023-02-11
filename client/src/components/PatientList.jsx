@@ -6,7 +6,7 @@ const PatientList = ({ patients }) => {
         <div>
             <h1> Patient List</h1>
 
-            <Link to='NewPatient'>
+            <Link to='/newpatient'>
                 <button>Add Patient</button>
             </Link>
             <Patient patients={patients} />

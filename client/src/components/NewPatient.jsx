@@ -1,6 +1,6 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
-const NewPatient = ({ newPatient }) => {
+const NewPatient = ({ newPatient, handleChange, addPatient }) => {
 
     let navigate = useNavigate()
 
@@ -23,19 +23,24 @@ const NewPatient = ({ newPatient }) => {
                     required
                     value={newPatient.name}
                     placeholder={'Full Name'}
-                // onChange={(e) => setPatientName(e.target.value)}
+                    // onChange={(e) => setPatientName(e.target.value)}
+                    onChange={handleChange}
                 />
-                <label htmlFor='patientId'>Id Number</label>
+                {/* <label htmlFor='patientId'>Id Number</label>
                 <input
-                    id='patientId'
-                    type='text'
-                    required
-                    value={newPatient.id}
-                    placeholder={'Patient Id Number'}
+                id='patientId'
+                type='text'
+                required
+                value={newPatient.id}
+                placeholder={'Patient Id Number'}
                 // onChange={(e) => setPatientId(e.target.value)}
-                />
+                onChange={handleChange}
+            /> */}
+                {/* <Link to='/'> */}
                 <button type='submit'>Submit</button>
+                {/* </Link> */}
             </form>
+
         </main>
     )
 }
