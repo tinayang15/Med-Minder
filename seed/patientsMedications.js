@@ -5,12 +5,12 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
     const patient1 = await new Patient({
-        name: 'Tina Yang',
+        name: 'Jane Doe'
     })
     patient1.save()
 
     const patient2 = await new Patient({
-        name: 'Timothy Smith'
+        name: 'John Doe'
     })
     patient2.save()
 
@@ -26,7 +26,7 @@ const main = async () => {
 
 const run = async () => {
     await main()
-    db.close()
+    // db.close()
 }
 
 run()
