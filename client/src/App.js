@@ -2,48 +2,22 @@ import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import PatientList from './components/PatientList'
-// import Nav from './components/Nav'
+import Nav from './components/Nav'
 import Header from './components/Header'
 import NewPatient from './components/NewPatient';
 import MedicationList from './components/MedicationList'
+import NewMedication from './components/NewMedication'
+
+import axios from 'axios'
 
 function App() {
 
-  const [patients, setPatients] = useState([
-    {
-      name: 'Jane Doe',
-      // id: '12345'
-    },
-    {
-      name: 'John Doe',
-      // id: '54321'
-    },
-  ])
-
-  const [newPatient, setNewPatient] = useState({
-    name: '',
-    // id: '',
-  })
-
-  const addPatient = (e) => {
-    e.preventDefault()
-    const currentPatients = patients
-    const createdPatient = {
-      newPatient,
-      // name: ,
-      // id: patients.id
-    }
-    currentPatients.push(createdPatient)
-    setPatients(currentPatients)
-    setNewPatient({ name: '' })
-  }
-
-  const handleChange = (e) => {
-    setNewPatient({
-      // ...newPatient, [e.target.name]:
-      newPatient, [e.target.name]: e.target.value
-    })
-  }
+  // const handleClick = async (e) => {
+  //   console.log('button is clicked')
+  //   e.preventDefault()
+  //   const response = await axios.get('http://localhost:3001/home/patients')
+  //   console.log(response)
+  // }
 
   // SEARCH Bar
   //   const [search, setSearch] = useState('')
@@ -62,10 +36,13 @@ function App() {
       <Header title='Med Minder' />
       {/* <Nav search={search} setSearch={setSearch} /> */}
       <main>
+        {/* <button onClick={handleClick}>GetPatientsTest</button> */}
         <Routes>
-          <Route path='/' element={<PatientList patients={patients} />} />
-          <Route path='/newpatient' element={<NewPatient newPatient={newPatient} addPatient={addPatient} handleChange={handleChange} />} />
+          <Route path='/' element={<PatientList />} />
+          <Route path='/newpatient' element={<NewPatient />} />
           <Route path='/medicationslist' element={<MedicationList />} />
+          <Route path='/newmedication' element={<NewMedication />} />
+
         </Routes>
       </main>
     </div>

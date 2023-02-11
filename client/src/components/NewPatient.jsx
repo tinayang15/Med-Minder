@@ -1,14 +1,34 @@
 import { useNavigate, Link } from 'react-router-dom'
+import axios from 'axios'
+import { useState } from 'react'
 
-const NewPatient = ({ newPatient, handleChange, addPatient }) => {
+const NewPatient = () => {
 
     let navigate = useNavigate()
 
-    const handleSubmit = (e) => {
-        newPatient.addPatient(e)
+    const [newPatient, setNewPatient] = useState({
+        name: '',
+    })
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const newPatientPackage = {
+            name: newPatient.name
+        }
+        console.log(newPatient)
+        let response =
+            await axios.post('http://localhost:3001/home/patients', newPatientPackage)
         navigate('/')
     }
 
+    const handleChange = (e) => {
+        console.log(e.target.value)
+        setNewPatient({
+            // ...newPatient, [e.target.name]:
+            [e.target.name]: e.target.value
+        })
+        console.log(newPatient)
+    }
 
     return (
         <main className='NewPatient'>
@@ -25,6 +45,7 @@ const NewPatient = ({ newPatient, handleChange, addPatient }) => {
                     placeholder={'Full Name'}
                     // onChange={(e) => setPatientName(e.target.value)}
                     onChange={handleChange}
+                    name='name'
                 />
                 {/* <label htmlFor='patientId'>Id Number</label>
                 <input
