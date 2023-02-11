@@ -4,20 +4,42 @@ import './App.css';
 import PatientList from './components/PatientList'
 // import Nav from './components/Nav'
 import Header from './components/Header'
+import NewPatient from './components/NewPatient';
 
 function App() {
 
   const [patients, setPatients] = useState([
     {
       name: 'Jane Doe',
-      id: 12345
+      id: '12345'
     },
     {
       name: 'John Doe',
-      id: 12345
+      id: '54321'
     },
   ])
 
+  const [newPatient, setNewPatient] = useState({
+    name: '',
+    id: '',
+  })
+
+  const addPatient = (e) => {
+    e.preventDefault()
+    const currentPatients = patients
+    const createdPatient = {
+      ...newPatient,
+      name: patients.name,
+      id: patients.id
+    }
+    currentPatients.push(createdPatient)
+    setPatients(currentPatients)
+    setNewPatient({ name: '', id: '' })
+  }
+
+  const handleChange = (e) => {
+    setNewPatient({ ...newPatient, [e.target.name]: e.target.value })
+  }
 
   // SEARCH Bar
   //   const [search, setSearch] = useState('')
@@ -38,6 +60,7 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<PatientList patients={patients} />} />
+          <Route path='/newpatient' element={<NewPatient newPatient={newPatient} addPatient={addPatient} handleChange={handleChange} />} />
         </Routes>
       </main>
     </div>
