@@ -8,7 +8,7 @@ const PatientList = () => {
     const [patients, setPatients] = useState([])
 
     const getPatients = async (e) => {
-        console.log('banana')
+        // console.log('banana')
         try {
             let res = await axios.get('http://localhost:3001/home/patients')
             console.log(res.data.patients)

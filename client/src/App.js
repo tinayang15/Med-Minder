@@ -36,11 +36,11 @@ function App() {
       <Header title='Med Minder' />
       {/* <Nav search={search} setSearch={setSearch} /> */}
       <main>
-        {/* <button onClick={handleClick}>GetPatientsTest</button> */}
+
         <Routes>
           <Route path='/' element={<PatientList />} />
           <Route path='/newpatient' element={<NewPatient />} />
-          <Route path='/medicationslist' element={<MedicationList />} />
+          <Route path='/medicationslist/:patientId' element={<MedicationList />} />
           <Route path='/newmedication' element={<NewMedication />} />
 
         </Routes>

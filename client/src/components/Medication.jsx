@@ -1,9 +1,9 @@
-const Medication = () => {
+const Medication = ({ medication }) => {
     return (
         <div>
-            <h2>Medication Name: </h2>
-            <p>Dose:</p>
-            <p>Prescription Details: </p>
+            <h3>Medication Name: {medication.Name}</h3>
+            <p>Dose: {medication.Dose}</p>
+            <p>Prescription Details: {medication.Prescription} </p>
         </div>
     )
 }
