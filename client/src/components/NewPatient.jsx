@@ -16,7 +16,7 @@ const NewPatient = () => {
             name: newPatient.name
         }
         console.log(newPatient)
-        let response =
+        const response =
             await axios.post('http://localhost:3001/home/patients', newPatientPackage)
         navigate('/')
     }

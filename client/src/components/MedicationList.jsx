@@ -2,6 +2,7 @@ import Medication from './Medication'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+// import { FaTrashAlt } from 'react-icons/fa'
 
 const MedicationList = ({ }) => {
     const [medications, setMedications] = useState([])
@@ -29,10 +30,12 @@ const MedicationList = ({ }) => {
             <Link to={`/medicationslist/${patientId}/newmedication`}>
                 <button>Add Medication</button>
             </Link>
-            <p>
+            <div>
+
                 {medications.map((medication) => (
-                    <Medication medication={medication} patientId={patientId} />))}
-            </p>
+                    <Medication medication={medication} patientId={patientId} getPatient={getPatientIdMedications} />))}
+
+            </div>
         </div>
     )
 }

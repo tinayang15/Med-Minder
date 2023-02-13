@@ -10,7 +10,7 @@ const PatientList = () => {
     const getPatients = async (e) => {
         // console.log('banana')
         try {
-            let res = await axios.get('http://localhost:3001/home/patients')
+            const res = await axios.get('http://localhost:3001/home/patients')
             console.log(res.data.patients)
             setPatients(res.data.patients)
             console.log(patients)

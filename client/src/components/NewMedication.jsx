@@ -19,7 +19,7 @@ const NewMedication = () => {
             // patientId: newMedication.patientId
         }
         console.log(newMedication)
-        let response =
+        const response =
             await axios.post(`http://localhost:3001/home/patients/${patientId}/medications`, newMedicationPackage)
         navigate(`/medicationslist/${patientId}`)
     }
