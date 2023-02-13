@@ -7,6 +7,7 @@ import Header from './components/Header'
 import NewPatient from './components/NewPatient';
 import MedicationList from './components/MedicationList'
 import NewMedication from './components/NewMedication'
+import UpdateMedication from './components/UpdateMedication';
 
 import axios from 'axios'
 
@@ -41,7 +42,8 @@ function App() {
           <Route path='/' element={<PatientList />} />
           <Route path='/newpatient' element={<NewPatient />} />
           <Route path='/medicationslist/:patientId' element={<MedicationList />} />
-          <Route path='/newmedication' element={<NewMedication />} />
+          <Route path='/medicationslist/:patientId/newmedication' element={<NewMedication />} />
+          <Route path='/medicationslist/:patientId/update/:medicationName/:medicationDose/:medicationPrescription/:medicationId' element={<UpdateMedication />} />
 
         </Routes>
       </main>

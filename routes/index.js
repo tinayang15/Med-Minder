@@ -18,7 +18,7 @@ router.delete('/patients/:id', controllers.deletePatient)
 
 
 
-router.post('/patients/medications/:id', controllers.createMedication)
+router.post('/patients/:id/medications', controllers.createMedication)
 
 router.get('/patients/:id/medications', controllers.getAllMedications)
 
