@@ -2,7 +2,6 @@ import Medication from './Medication'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-// import { FaTrashAlt } from 'react-icons/fa'
 
 const MedicationList = ({ }) => {
     const [medications, setMedications] = useState([])
@@ -12,9 +11,7 @@ const MedicationList = ({ }) => {
         console.log('meds')
         try {
             let res = await axios.get(`http://localhost:3001/home/patients/${patientId}/medications`)
-            console.log(res)
             setMedications(res.data)
-            console.log(res.data)
         } catch (err) {
             console.log(err)
         }
