@@ -15,19 +15,15 @@ const NewPatient = () => {
         const newPatientPackage = {
             name: newPatient.name
         }
-        console.log(newPatient)
         const response =
             await axios.post('http://localhost:3001/home/patients', newPatientPackage)
         navigate('/')
     }
 
     const handleChange = (e) => {
-        console.log(e.target.value)
         setNewPatient({
-            // ...newPatient, [e.target.name]:
             [e.target.name]: e.target.value
         })
-        console.log(newPatient)
     }
 
     return (
@@ -43,23 +39,10 @@ const NewPatient = () => {
                     required
                     value={newPatient.name}
                     placeholder={'Full Name'}
-                    // onChange={(e) => setPatientName(e.target.value)}
                     onChange={handleChange}
                     name='name'
                 />
-                {/* <label htmlFor='patientId'>Id Number</label>
-                <input
-                id='patientId'
-                type='text'
-                required
-                value={newPatient.id}
-                placeholder={'Patient Id Number'}
-                // onChange={(e) => setPatientId(e.target.value)}
-                onChange={handleChange}
-            /> */}
-                {/* <Link to='/'> */}
                 <button type='submit'>Submit</button>
-                {/* </Link> */}
             </form>
 
         </main>
