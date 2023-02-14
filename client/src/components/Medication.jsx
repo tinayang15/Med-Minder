@@ -6,20 +6,13 @@ import axios from 'axios'
 
 
 const Medication = ({ medication, patientId, getPatient }) => {
-    // let medicationId = medication._id
+
     let navigate = useNavigate()
-    // const handleSubmit = async (medicationId) => {
-    //     // console.log(medicationId)
-    //     // e.preventDefault()
-    //     const MedsPackage = []
-    //     const response = await axios.delete(`http://localhost:3001/home/patients/${patientId}/medications/${medicationId}`, MedsPackage)
-    //     navigate(`/medicationslist/${patientId}`)
-    // }
+
 
     const handleDelete = async (id) => {
         console.log(medication)
         await axios.delete(`http://localhost:3001/home/patients/${patientId}/medications/${id}`)
-        // navigate(`/medicationslist/${patientId}`)
         getPatient()
 
     }
