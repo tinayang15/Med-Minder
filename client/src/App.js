@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import PatientList from './components/PatientList'
-import Nav from './components/Nav'
+// import Nav from './components/Nav'
 import Header from './components/Header'
 import NewPatient from './components/NewPatient';
 import MedicationList from './components/MedicationList'
@@ -35,6 +35,7 @@ function App() {
     // add search bar
     <div className="App">
       <Header title='Med Minder' />
+
       {/* <Nav search={search} setSearch={setSearch} /> */}
       <main>
 
