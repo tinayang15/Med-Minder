@@ -8,12 +8,9 @@ const UpdateMedication = () => {
     const { meds } = location.state
     const { medication } = useParams()
     const { patientId } = useParams()
-    console.log(meds)
 
-    //get medication 2 use state
 
     const [updateMedication, setUpdateMedication] = useState({ Name: `${meds.Name}`, Dose: `${meds.Dose}`, Prescription: `${meds.Prescription}`, patientId: `${patientId}` })
-    // console.log(updateMedication)
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -22,18 +19,15 @@ const UpdateMedication = () => {
             Dose: updateMedication.Dose,
             Prescription: updateMedication.Prescription
         }
-        console.log(updateMedication)
         const response = await axios.put(`http://localhost:3001/home/patients/${patientId}/medications/${meds._id}`, updateMedicationPackage)
         navigate(`/medicationslist/${patientId}`)
     }
 
 
     const handleChangeThree = (e) => {
-        console.log(e.target.value)
         setUpdateMedication({
             ...updateMedication, [e.target.name]: e.target.value
         })
-        console.log(updateMedication)
     }
 
     return (
