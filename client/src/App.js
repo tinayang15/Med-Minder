@@ -44,7 +44,7 @@ function App() {
           <Route path='/newpatient' element={<NewPatient />} />
           <Route path='/medicationslist/:patientId' element={<MedicationList />} />
           <Route path='/medicationslist/:patientId/newmedication' element={<NewMedication />} />
-          <Route path='/medicationslist/:patientId/update/:medicationName/:medicationDose/:medicationPrescription/:medicationId' element={<UpdateMedication />} />
+          <Route path='/medicationslist/:patientId/update/:medication' element={<UpdateMedication />} />
 
         </Routes>
       </main>

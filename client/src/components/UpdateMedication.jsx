@@ -1,16 +1,18 @@
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { useState } from 'react'
 
 const UpdateMedication = () => {
     let navigate = useNavigate()
-    const { medicationId } = useParams()
-    const { medicationName } = useParams()
-    const { medicationPrescription } = useParams()
-    const { medicationDose } = useParams()
+    const location = useLocation()
+    const { meds } = location.state
+    const { medication } = useParams()
     const { patientId } = useParams()
-    // console.log(medicationId)
-    const [updateMedication, setUpdateMedication] = useState({ Name: `${medicationName}`, Dose: `${medicationDose}`, Prescription: `${medicationPrescription}`, patientId: `${patientId}` })
+    console.log(meds)
+
+    //get medication 2 use state
+
+    const [updateMedication, setUpdateMedication] = useState({ Name: `${meds.Name}`, Dose: `${meds.Dose}`, Prescription: `${meds.Prescription}`, patientId: `${patientId}` })
     // console.log(updateMedication)
 
     const handleSubmit = async (e) => {
@@ -21,7 +23,7 @@ const UpdateMedication = () => {
             Prescription: updateMedication.Prescription
         }
         console.log(updateMedication)
-        let response = await axios.put(`http://localhost:3001/home/patients/${patientId}/medications/${medicationId}`, updateMedicationPackage)
+        const response = await axios.put(`http://localhost:3001/home/patients/${patientId}/medications/${meds._id}`, updateMedicationPackage)
         navigate(`/medicationslist/${patientId}`)
     }
 

@@ -27,7 +27,7 @@ const Medication = ({ medication, patientId, getPatient }) => {
     return (
         <div>
             <h3>Medication Name: {medication.Name}</h3>
-            <Link to={`/medicationslist/${patientId}/update/${medication.Name}/${medication.Dose}/${medication.Prescription}/${medication._id}`}>
+            <Link to={`/medicationslist/${patientId}/update/${medication}`} state={{ meds: medication }}>
                 <button>Update Medication</button>
             </Link>
             <FaTrashAlt
