@@ -35,6 +35,7 @@ const UpdateMedication = () => {
         })
         console.log(updateMedication)
     }
+
     return (
         <main className='UpdateMedication'>
             <h2> Update Medication </h2>

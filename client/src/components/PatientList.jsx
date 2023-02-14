@@ -4,16 +4,12 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 const PatientList = () => {
-    // get all patients and saved to local state
     const [patients, setPatients] = useState([])
 
     const getPatients = async (e) => {
-        // console.log('banana')
         try {
             const res = await axios.get('http://localhost:3001/home/patients')
-            console.log(res.data.patients)
             setPatients(res.data.patients)
-            console.log(patients)
         } catch (err) {
             console.log(err)
         }
@@ -29,9 +25,10 @@ const PatientList = () => {
             <Link to='/newpatient'>
                 <button>Add Patient</button>
             </Link>
-            {/* map over patients and create a new patient component */}
             {patients.map((patient) => (
-                <Patient patient={patient} />
+                <div key='patients._id'>
+                    <Patient patient={patient} />
+                </div>
             ))}
         </div>
     )
