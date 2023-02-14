@@ -7,7 +7,6 @@ const NewMedication = () => {
     const { patientId } = useParams()
     const [newMedication, setNewMedication] = useState({
         Name: '', Dose: '', Prescription: ''
-        // , patientId: '' 
     })
 
     const handleSubmit = async (e) => {
@@ -16,19 +15,15 @@ const NewMedication = () => {
             Name: newMedication.Name,
             Dose: newMedication.Dose,
             Prescription: newMedication.Prescription,
-            // patientId: newMedication.patientId
         }
-        console.log(newMedication)
         const response =
             await axios.post(`http://localhost:3001/home/patients/${patientId}/medications`, newMedicationPackage)
         navigate(`/medicationslist/${patientId}`)
     }
     const handleChangeTwo = (e) => {
-        console.log(e.target.value)
         setNewMedication({
             ...newMedication, [e.target.name]: e.target.value
         })
-        console.log(newMedication)
     }
     return (
         <main className='NewMedication'>
