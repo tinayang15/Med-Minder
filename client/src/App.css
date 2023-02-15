@@ -34,13 +34,20 @@ main {
   text-align: center;
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  margin: 0 0 0 20px;
+}
+
+.navPatients,
+.navAdd {
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 .navPatientsList {
