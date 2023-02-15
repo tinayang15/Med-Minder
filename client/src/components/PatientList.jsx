@@ -8,7 +8,7 @@ const PatientList = () => {
 
     const getPatients = async (e) => {
         try {
-            const res = await axios.get('http://localhost:3001/home/patients')
+            const res = await axios.get('/home/patients')
             setPatients(res.data.patients)
         } catch (err) {
             console.log(err)

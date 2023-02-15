@@ -19,7 +19,7 @@ const UpdateMedication = () => {
             Dose: updateMedication.Dose,
             Prescription: updateMedication.Prescription
         }
-        const response = await axios.put(`http://localhost:3001/home/patients/${patientId}/medications/${meds._id}`, updateMedicationPackage)
+        const response = await axios.put(`/home/patients/${patientId}/medications/${meds._id}`, updateMedicationPackage)
         navigate(`/medicationslist/${patientId}`)
     }
 

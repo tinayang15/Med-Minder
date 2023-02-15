@@ -10,7 +10,7 @@ const MedicationList = ({ }) => {
     const getPatientIdMedications = async (e) => {
         console.log('meds')
         try {
-            let res = await axios.get(`http://localhost:3001/home/patients/${patientId}/medications`)
+            let res = await axios.get(`/home/patients/${patientId}/medications`)
             setMedications(res.data)
         } catch (err) {
             console.log(err)

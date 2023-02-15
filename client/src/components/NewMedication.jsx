@@ -17,7 +17,7 @@ const NewMedication = () => {
             Prescription: newMedication.Prescription,
         }
         const response =
-            await axios.post(`http://localhost:3001/home/patients/${patientId}/medications`, newMedicationPackage)
+            await axios.post(`/home/patients/${patientId}/medications`, newMedicationPackage)
         navigate(`/medicationslist/${patientId}`)
     }
     const handleChangeTwo = (e) => {

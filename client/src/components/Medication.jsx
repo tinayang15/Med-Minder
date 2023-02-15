@@ -12,7 +12,7 @@ const Medication = ({ medication, patientId, getPatient }) => {
 
     const handleDelete = async (id) => {
         console.log(medication)
-        await axios.delete(`http://localhost:3001/home/patients/${patientId}/medications/${id}`)
+        await axios.delete(`/home/patients/${patientId}/medications/${id}`)
         getPatient()
 
     }
