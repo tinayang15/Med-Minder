@@ -9,7 +9,6 @@ const UpdateMedication = () => {
     const { medication } = useParams()
     const { patientId } = useParams()
 
-
     const [updateMedication, setUpdateMedication] = useState({ Name: `${meds.Name}`, Dose: `${meds.Dose}`, Prescription: `${meds.Prescription}`, patientId: `${patientId}` })
 
     const handleSubmit = async (e) => {
@@ -45,6 +44,7 @@ const UpdateMedication = () => {
                     placeholder={'Medication Name'}
                     onChange={handleChangeThree}
                     name='Name'
+                    className='updateMedicationName'
                 />
                 <label htmlFor='medicationDose'>Dose</label>
                 <input
@@ -55,6 +55,7 @@ const UpdateMedication = () => {
                     placeholder={'Dose'}
                     onChange={handleChangeThree}
                     name='Dose'
+                    className='updateMedicationDose'
                 />
                 <label htmlFor='medicationPrescription'>Prescription</label>
                 <input
@@ -65,6 +66,7 @@ const UpdateMedication = () => {
                     placeholder={'Prescription'}
                     onChange={handleChangeThree}
                     name='Prescription'
+                    className='updateMedicationPrescription'
                 />
                 <button type='submit'>Submit</button>
             </form>

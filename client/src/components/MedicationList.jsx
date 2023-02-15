@@ -25,7 +25,7 @@ const MedicationList = ({ }) => {
         <div>
             <h2 className='MedicationList'>Medication List</h2>
             <Link to={`/medicationslist/${patientId}/newmedication`}>
-                <button>Add Medication</button>
+                <button className='newMedicationButton'>Add Medication</button>
             </Link>
             <div>
 

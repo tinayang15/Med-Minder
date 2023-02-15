@@ -41,8 +41,9 @@ const NewPatient = () => {
                     placeholder={'Full Name'}
                     onChange={handleChange}
                     name='name'
+                    className='newPatientInput'
                 />
-                <button type='submit'>Submit</button>
+                <button type='submit' className='newPatientButton'>Submit</button>
             </form>
 
         </main>

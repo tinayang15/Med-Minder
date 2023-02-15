@@ -40,6 +40,7 @@ const NewMedication = () => {
                     placeholder={'Medication Name'}
                     onChange={handleChangeTwo}
                     name='Name'
+                    className='newMedicationName'
                 />
                 <label htmlFor='medicationDose'>Dose</label>
                 <input
@@ -50,6 +51,7 @@ const NewMedication = () => {
                     placeholder={'Dose'}
                     onChange={handleChangeTwo}
                     name='Dose'
+                    className='newMedicationDose'
                 />
                 <label htmlFor='medicationPrescription'>Prescription</label>
                 <input
@@ -60,8 +62,9 @@ const NewMedication = () => {
                     placeholder={'Prescription'}
                     onChange={handleChangeTwo}
                     name='Prescription'
+                    className='newMedicationPrescription'
                 />
-                <button type='submit'>Submit</button>
+                <button type='submit' className='newMedicationSubmit'>Submit</button>
             </form>
 
         </main>

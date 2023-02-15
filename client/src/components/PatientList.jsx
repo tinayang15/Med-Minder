@@ -10,6 +10,7 @@ const PatientList = () => {
         try {
             const res = await axios.get('/home/patients')
             setPatients(res.data.patients)
+            // console.log(res.data.patients)
         } catch (err) {
             console.log(err)
         }
@@ -20,17 +21,18 @@ const PatientList = () => {
     }, [])
 
     return (
-        <div>
-            <h1> Patient List</h1>
-            <Link to='/newpatient'>
+        <div className='patientList'>
+            <h1 className='patientListTitle'> Patient List</h1>
+            {/* <Link to='/newpatient'>
                 <button>Add Patient</button>
-            </Link>
+            </Link> */}
             {patients.map((patient) => (
-                <div key='patients._id'>
+                < div key='patient._id' >
                     <Patient patient={patient} />
                 </div>
-            ))}
-        </div>
+            ))
+            }
+        </div >
     )
 }
 export default PatientList
