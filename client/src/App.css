@@ -14,7 +14,7 @@
 /* font-family: 'Nunito", sans-serif;' */
 /* } */
 
-*/ body {
+body {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap
@@ -29,6 +29,20 @@ main {
   gap: 1rem;
 }
 
+.Header {
+  background-color: rgb(178, 189, 243);
+  text-align: center;
+  display: flex;
+  align-content: center;
+}
+
+
+
+
+/* .patientList {
+  background-color: rgb(178, 189, 243)
+} */
+
 /* div {
   /* width: 200px;
   height: 200px; */
@@ -42,16 +56,9 @@ main {
   background-color: blue;
 } */
 
-.navbar {
+/* .navbar {
   background-color: rgb(178, 189, 243);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-}
-
-.Header {
-  background-color: rgb(178, 189, 243);
-  text-align: center
-    /* display: flex; */
-    /* align-content: center; */
-}
+}*/
