@@ -37,6 +37,7 @@ main {
   /* justify-content: space-between; */
 }
 
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -44,10 +45,10 @@ main {
   margin: 0 0 0 20px;
 }
 
-.navPatients,
-.navAdd {
+.navbar a {
+  color: white;
   text-decoration: none;
-  text-decoration-color: white;
+  font-weight: bold;
 }
 
 .navPatientsList {
