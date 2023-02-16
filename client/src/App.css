@@ -180,8 +180,6 @@ body {
   align-items: center;
   margin: 13vh 0 0 0;
   width: 20vw;
-  /* background-image: url('https://i.imgur.com/IzspiRI.jpg'); */
-  background-size: cover;
 }
 
 .newPatientForm {
@@ -224,4 +222,21 @@ body {
 
 .newPatientButton:hover~.newPatientButton {
   transform: translateY(30px);
+}
+
+.medications {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0 0 0;
+  width: 26vw;
+}
+
+.medicationsMap {
+  overflow-y: auto;
+  max-height: 250px;
+  background-color: purple;
+
 }

@@ -22,16 +22,15 @@ const MedicationList = ({ }) => {
     }, [])
 
     return (
-        <div>
+        <div className='medications'>
             <h2 className='MedicationList'>Medication List</h2>
             <Link to={`/medicationslist/${patientId}/newmedication`}>
                 <button className='newMedicationButton'>Add Medication</button>
             </Link>
-            <div>
+            <div className='medicationsMap'>
 
                 {medications.map((medication) => (
                     <Medication medication={medication} patientId={patientId} getPatient={getPatientIdMedications} />))}
-
             </div>
         </div>
     )
