@@ -14,7 +14,6 @@ const Medication = ({ medication, patientId, getPatient }) => {
         console.log(medication)
         await axios.delete(`/home/patients/${patientId}/medications/${id}`)
         getPatient()
-
     }
 
     return (

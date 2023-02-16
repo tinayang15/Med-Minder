@@ -23,15 +23,16 @@ const PatientList = () => {
     return (
         <div className='patientList'>
             <h1 className='patientListTitle'> Patient List</h1>
-            {/* <Link to='/newpatient'>
+            <div className='list'>
+                {/* <Link to='/newpatient'>
                 <button>Add Patient</button>
             </Link> */}
-            {patients.map((patient) => (
-                < div key='patient._id' >
-                    <Patient patient={patient} />
-                </div>
-            ))
-            }
+                {patients.map((patient) => (
+                    < div key='patient._id' >
+                        <Patient patient={patient} />
+                    </div>
+                ))
+                }</div>
         </div >
     )
 }

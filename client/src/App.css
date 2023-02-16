@@ -17,10 +17,18 @@
 body {
   min-height: 100vh;
   display: flex;
-  flex-flow: column nowrap
+  flex-flow: column nowrap;
+  background-image: url('https://i.imgur.com/DGtkjXz.jpg');
+  background-size: cover;
 }
 
+
+
 main {
+  background-color: rgb(72, 139, 255);
+  margin: 10vh 40vw 0px 35vw;
+  height: 50vh;
+  width: 30vw;
   flex-grow: 1;
   display: flex;
   flex-flow: column nowrap;
@@ -30,10 +38,13 @@ main {
 }
 
 .Header {
-  background-color: rgb(178, 189, 243);
+  background-color: rgb(102, 200, 238);
   text-align: center;
   display: flex;
   align-content: center;
+  color: white;
+  padding: 10px 0 0 20px;
+  border-bottom: 2px solid rgb(0, 0, 0);
   /* justify-content: space-between; */
 }
 
@@ -104,9 +115,16 @@ main {
 
 
 
-/* .patientList {
-  background-color: rgb(178, 189, 243)
-} */
+.patientList {
+  background-color: rgb(178, 189, 243);
+  /* height: 300px;
+  width: 300px; */
+}
+
+.list {
+  overflow-y: auto;
+  max-height: 100px;
+}
 
 /* div {
   /* width: 200px;
