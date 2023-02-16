@@ -28,7 +28,7 @@ const PatientList = () => {
                 <button>Add Patient</button>
             </Link> */}
                 {patients.map((patient) => (
-                    < div key='patient._id' >
+                    <div key='patient._id' >
                         <Patient patient={patient} />
                     </div>
                 ))

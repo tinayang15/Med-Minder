@@ -28,7 +28,7 @@ body {
   background-color: rgb(72, 139, 255);
   margin: 10vh 40vw 0px 35vw;
   height: 50vh;
-  width: 30vw;
+  width: 40vw;
   flex-grow: 1;
   display: flex;
   flex-flow: column nowrap;
@@ -122,7 +122,22 @@ body {
   transform: translateY(30px);
 }
 
+.patient {
+  border-bottom: 2px solid rgb(155, 155, 155);
+  box-shadow: 5px 5px 2px #dedbdb;
+}
 
+/* .patient:hover {
+  transform: scale(1.03);
+}
+
+.patient:hover~.patient {
+  transform: translateY(30px);
+} */
+
+.PatientName {
+  margin: 8px;
+}
 
 .patientList {
   /* background-color: rgb(178, 189, 243); */
@@ -140,9 +155,12 @@ body {
   overflow-y: auto;
   max-height: 200px;
   margin: 3vh 0vw;
+  width: 25vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  /* border: 2px solid black; */
+  background-color: rgb(131, 214, 250);
 
   /* text-decoration: none;
   text-decoration-style: none; */
@@ -230,13 +248,52 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2vh 0 0 0;
-  width: 26vw;
+  margin: 1vh 0 0 0;
+  width: 40vw;
+  text-align: center;
 }
+
 
 .medicationsMap {
   overflow-y: auto;
   max-height: 250px;
   background-color: purple;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
+.newMedicationButton {
+  font-size: 14px;
+  margin: 1vh 0 1vh 0;
+  border: 2px solid black;
+  padding: 3px;
+  box-shadow: 5px 10px 18px #888888;
+  text-align: center;
+}
+
+.newMedicationButton:hover {
+  transform: scale(1.06);
+}
+
+.newMedicationButton:hover~.newMedicationButton {
+  transform: translateY(30px);
+}
+
+.medicationName {
+  font-style: italic;
+}
+
+.medicationNameButton {
+  display: flex;
+  flex-direction: row;
+  padding: 2px
+}
+
+.updateMedicationButton {
+  margin: 0 0 0 5vw;
+}
+
+.prescription {
+  border-bottom: 2px solid black;
 }

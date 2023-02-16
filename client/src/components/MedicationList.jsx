@@ -23,10 +23,13 @@ const MedicationList = ({ }) => {
 
     return (
         <div className='medications'>
-            <h2 className='MedicationList'>Medication List</h2>
-            <Link to={`/medicationslist/${patientId}/newmedication`}>
-                <button className='newMedicationButton'>Add Medication</button>
-            </Link>
+            <div className='medicationAddMeds'>
+                <h2 className='MedicationList'>Medication List</h2>
+
+                <Link to={`/medicationslist/${patientId}/newmedication`}>
+                    <button className='newMedicationButton'>Add Medication</button>
+                </Link>
+            </div>
             <div className='medicationsMap'>
 
                 {medications.map((medication) => (
