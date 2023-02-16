@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useState } from 'react'
+import '../NewPatient.css'
 
 const NewPatient = () => {
 
@@ -32,18 +33,21 @@ const NewPatient = () => {
             <form className='newPatientForm'
                 onSubmit={handleSubmit}
             >
-                <label htmlFor='patientName'>Name</label>
+                <label htmlFor='patientName'></label>
+                {/* <div className='newInputSubmit'> */}
                 <input
                     id='postName'
                     type='text'
                     required
                     value={newPatient.name}
-                    placeholder={'Full Name'}
+                    placeholder={'Patient Full Name'}
                     onChange={handleChange}
                     name='name'
                     className='newPatientInput'
                 />
+                <br />
                 <button type='submit' className='newPatientButton'>Submit</button>
+                {/* </div> */}
             </form>
 
         </main>

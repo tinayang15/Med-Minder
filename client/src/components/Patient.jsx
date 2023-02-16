@@ -3,7 +3,7 @@ import MedicationList from './MedicationList'
 
 const Patient = ({ patient }) => {
     return (
-        <div>
+        <div className='patient'>
 
             <ul>
                 <Link to={`/medicationslist/${patient._id}`} >

@@ -36,7 +36,7 @@ function App() {
       <Header title='Med Minder' />
 
       {/* <Nav search={search} setSearch={setSearch} /> */}
-      <main>
+      <main className='RoutesApp'>
 
         <Routes>
           <Route path='/' element={<PatientList />} />
