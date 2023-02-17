@@ -295,6 +295,7 @@ body {
   margin: 0 1vw 0 2vw;
   padding: 2px;
   box-shadow: 5px 10px 18px #8ae9f4;
+  border: 1px solid black;
 }
 
 .updateMedicationButton:hover {
@@ -399,4 +400,78 @@ body {
 .newMedicationPrescription {
   margin: 0 0 2vh 0;
   border: 2px solid rgb(0, 0, 0);
+}
+
+.updateMedication {
+  text-align: center;
+  width: 38vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateMedicationForm {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateMeds {
+  width: 18vw;
+  /* height: 20vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateMedicationName,
+.updateMedicationDose,
+.updateMedicationPrescription {
+  font-size: 16px;
+}
+
+.updateMeds label {
+  font-size: 18px;
+}
+
+.updateTitle {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.updateMedicationName {
+  margin: 0 0 2vh 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.updateMedicationDose {
+  margin: 0 0 2vh 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.updateMedicationPrescription {
+  margin: 0 0 2vh 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.updateMedicationSubmit {
+  margin: 1vh 0 0 0;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 2px;
+}
+
+.updateMedicationSubmit:hover {
+
+  transform: scale(1.06);
+}
+
+.updateMedicationSubmit:hover~.updateMedicationSubmit {
+  transform: translateY(30px);
 }

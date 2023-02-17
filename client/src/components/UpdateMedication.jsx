@@ -30,47 +30,50 @@ const UpdateMedication = () => {
     }
 
     return (
-        <main className='UpdateMedication'>
-            <h2> Update Medication </h2>
-            <form className='updateMedicationForm'
-                onSubmit={handleSubmit}
-            >
-                <label htmlFor='medicationName'>Medication Name</label>
-                <input
-                    id='putMedicationName'
-                    type='text'
-                    required
-                    value={updateMedication.Name}
-                    placeholder={'Medication Name'}
-                    onChange={handleChangeThree}
-                    name='Name'
-                    className='updateMedicationName'
-                />
-                <label htmlFor='medicationDose'>Dose</label>
-                <input
-                    id='putMedicationDose'
-                    type='text'
-                    required
-                    value={updateMedication.Dose}
-                    placeholder={'Dose'}
-                    onChange={handleChangeThree}
-                    name='Dose'
-                    className='updateMedicationDose'
-                />
-                <label htmlFor='medicationPrescription'>Prescription</label>
-                <input
-                    id='putMedicationPrescription'
-                    type='text'
-                    required
-                    value={updateMedication.Prescription}
-                    placeholder={'Prescription'}
-                    onChange={handleChangeThree}
-                    name='Prescription'
-                    className='updateMedicationPrescription'
-                />
-                <button type='submit'>Submit</button>
-            </form>
-
+        <main>
+            <div className='updateMedication'>
+                <h2 className='updateTitle'> Update Medication Form </h2>
+                <form className='updateMedicationForm'
+                    onSubmit={handleSubmit}
+                >
+                    <div className='updateMeds'>
+                        <label htmlFor='medicationName'>Medication Name</label>
+                        <input
+                            id='putMedicationName'
+                            type='text'
+                            required
+                            value={updateMedication.Name}
+                            placeholder={'Medication Name'}
+                            onChange={handleChangeThree}
+                            name='Name'
+                            className='updateMedicationName'
+                        />
+                        <label htmlFor='medicationDose'>Dose</label>
+                        <input
+                            id='putMedicationDose'
+                            type='text'
+                            required
+                            value={updateMedication.Dose}
+                            placeholder={'Dose'}
+                            onChange={handleChangeThree}
+                            name='Dose'
+                            className='updateMedicationDose'
+                        />
+                        <label htmlFor='medicationPrescription'>Prescription</label>
+                        <input
+                            id='putMedicationPrescription'
+                            type='text'
+                            required
+                            value={updateMedication.Prescription}
+                            placeholder={'Prescription'}
+                            onChange={handleChangeThree}
+                            name='Prescription'
+                            className='updateMedicationPrescription'
+                        />
+                        <button type='submit' className='updateMedicationSubmit'>Submit</button>
+                    </div>
+                </form>
+            </div>
         </main>
     )
 }
