@@ -333,3 +333,70 @@ body {
 .medicationsSingle:hover~.medicationsSingle {
   transform: translateY(30px);
 }
+
+.NewMedication {
+  text-align: center;
+  width: 38vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.medicationForm {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newMedicationSubmit {
+  margin: 1vh 0 0 0;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 2px;
+}
+
+.newMedicationSubmit:hover {
+
+  transform: scale(1.06);
+}
+
+.newMedicationSubmit:hover~.newMedicationSubmit {
+  transform: translateY(30px);
+}
+
+.medicationForm label {
+  font-size: 20px;
+}
+
+.newMedicationName,
+.newMedicationDose,
+.newMedicationPrescription {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.newMedicationTitle {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.newMedicationName {
+  margin: 0 0 2vh 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.newMedicationDose {
+  margin: 0 0 2vh 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.newMedicationPrescription {
+  margin: 0 0 2vh 0;
+  border: 2px solid rgb(0, 0, 0);
+}
