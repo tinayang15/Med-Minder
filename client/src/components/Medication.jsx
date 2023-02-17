@@ -17,7 +17,7 @@ const Medication = ({ medication, patientId, getPatient }) => {
     }
 
     return (
-        <div>
+        <div className='medicationsSingle'>
             <div className='medicationNameButton'>
                 <h3 className='medicationName'>Medication Name: {medication.Name}</h3>
                 <Link to={`/medicationslist/${patientId}/update/${medication}`} state={{ meds: medication }}>
@@ -34,7 +34,7 @@ const Medication = ({ medication, patientId, getPatient }) => {
             </div>
             <p className='dose'>Dose: {medication.Dose}</p>
             <p className='prescription'>Prescription Details: {medication.Prescription} </p>
-            <br /><br />
+            {/* <br /><br /> */}
         </div>
     )
 }
