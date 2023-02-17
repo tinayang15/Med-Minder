@@ -1,18 +1,8 @@
-/* .App {
-  text-align: center;
-} */
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* html {
-  /* font-size: 1.5rem; */
-/* font-family: 'Nunito", sans-serif;' */
-/* } */
 
 body {
   min-height: 100vh;
@@ -54,7 +44,6 @@ body {
   color: white;
   padding: 10px 0 0 20px;
   border-bottom: 2px solid rgb(0, 0, 0);
-  /* justify-content: space-between; */
 }
 
 
@@ -78,10 +67,8 @@ body {
   max-width: 50vh;
   border: 2px solid rgb(38, 168, 224);
   border-width: 15px;
-  /* border-radius: 30px; */
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  /* margin: 1px; */
   transition: .20s;
   align-items: center;
   justify-content: center;
@@ -104,8 +91,6 @@ body {
   background-color: rgb(208, 38, 224);
   border: 2px solid rgb(208, 38, 224);
   border-width: 15px;
-  /* border-radius: 20px; */
-  /* margin: 6px; */
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   transition: .20s;
@@ -127,27 +112,21 @@ body {
   box-shadow: 5px 5px 2px #dedbdb;
 }
 
-/* .patient:hover {
-  transform: scale(1.03);
-}
-
 .patient:hover~.patient {
   transform: translateY(30px);
-} */
+}
 
-.PatientName {
+*/ .PatientName {
   margin: 8px;
 }
 
 .patientList {
-  /* background-color: rgb(178, 189, 243); */
   font-size: 20px;
   padding: 2vh 2vw;
   width: 25vw;
   height: 45vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
 }
 
@@ -159,39 +138,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* border: 2px solid black; */
   background-color: rgb(131, 214, 250);
-
-  /* text-decoration: none;
-  text-decoration-style: none; */
 }
 
 .patient a {
   text-decoration: none
 }
 
-/* div {
-  /* width: 200px;
-  height: 200px; */
-/* border: 1px solid black; */
-/* display: grid; */
-/* place-content: center; */
-/* font-size: 20px; */
-/* } */
-
-/* div :nth-child(2) {
-  background-color: blue;
-} */
-
-/* .navbar {
-  background-color: rgb(178, 189, 243);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}*/
 
 .NewPatient {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,16 +159,7 @@ body {
   margin: 2vh 0 0 0;
   width: 20vw;
   text-align: center;
-  /* display: flex;
-  flex-direction: column; */
 }
-
-/* .newInputSubmit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 .newPatientInput {
   font-size: 19px;
@@ -243,7 +189,6 @@ body {
 }
 
 .medications {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,14 +196,12 @@ body {
   margin: 1vh 0 0 0;
   width: 35vw;
   text-align: center;
-  /* border: 2px solid black; */
 }
 
 
 .medicationsMap {
   overflow-y: auto;
   max-height: 250px;
-  /* background-color: purple; */
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -423,7 +366,6 @@ body {
 
 .updateMeds {
   width: 18vw;
-  /* height: 20vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;

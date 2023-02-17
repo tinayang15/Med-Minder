@@ -34,7 +34,6 @@ const NewPatient = () => {
                 onSubmit={handleSubmit}
             >
                 <label htmlFor='patientName'></label>
-                {/* <div className='newInputSubmit'> */}
                 <input
                     id='postName'
                     type='text'
@@ -47,7 +46,6 @@ const NewPatient = () => {
                 />
                 <br />
                 <button type='submit' className='newPatientButton'>Submit</button>
-                {/* </div> */}
             </form>
 
         </main>

@@ -10,7 +10,6 @@ const PatientList = () => {
         try {
             const res = await axios.get('/home/patients')
             setPatients(res.data.patients)
-            // console.log(res.data.patients)
         } catch (err) {
             console.log(err)
         }
@@ -24,9 +23,6 @@ const PatientList = () => {
         <div className='patientList'>
             <h1 className='patientListTitle'> Patient List</h1>
             <div className='list'>
-                {/* <Link to='/newpatient'>
-                <button>Add Patient</button>
-            </Link> */}
                 {patients.map((patient) => (
                     <div key='patient._id' >
                         <Patient patient={patient} />

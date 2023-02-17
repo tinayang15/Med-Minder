@@ -55,7 +55,7 @@
 #### How to pass states through links: [stackoverflow](https://stackoverflow.com/questions/47484406/how-to-pass-multiple-state-through-link-in-reactjs)
 #### Images: [Imgur](https://imgur.com/), [Google](https://www.google.com/)
 #### How to do css for links: [W3Schools](https://www.w3schools.com/css/css_link.asp)
-### How to remove underline for links: [geeksforgeeks](https://www.geeksforgeeks.org/how-to-remove-underline-for-anchors-tag-using-css/)
+#### How to remove underline for links: [geeksforgeeks](https://www.geeksforgeeks.org/how-to-remove-underline-for-anchors-tag-using-css/)
 #### How to do hover: [HTMLGuide](https://html.form.guide/web-form-widget/css3-button-hover-effects/), [W3Schools](https://www.w3schools.com/css/css3_buttons.asp)
 
 

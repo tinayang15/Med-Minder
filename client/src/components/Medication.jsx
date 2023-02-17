@@ -1,17 +1,10 @@
-import { Link, useNavigate } from 'react-router-dom'
-import UpdateMedication from './UpdateMedication'
+import { Link } from 'react-router-dom'
 import { FaTrashAlt } from 'react-icons/fa'
 import axios from 'axios'
 
-
-
 const Medication = ({ medication, patientId, getPatient }) => {
 
-    let navigate = useNavigate()
-
-
     const handleDelete = async (id) => {
-        console.log(medication)
         await axios.delete(`/home/patients/${patientId}/medications/${id}`)
         getPatient()
     }
@@ -34,7 +27,6 @@ const Medication = ({ medication, patientId, getPatient }) => {
             </div>
             <p className='dose'>Dose: {medication.Dose}</p>
             <p className='prescription'>Prescription Details: {medication.Prescription} </p>
-            {/* <br /><br /> */}
         </div>
     )
 }

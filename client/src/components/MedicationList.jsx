@@ -8,7 +8,6 @@ const MedicationList = ({ }) => {
     const { patientId } = useParams()
 
     const getPatientIdMedications = async (e) => {
-        console.log('meds')
         try {
             let res = await axios.get(`/home/patients/${patientId}/medications`)
             setMedications(res.data)
