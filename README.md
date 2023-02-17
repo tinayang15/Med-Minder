@@ -39,7 +39,9 @@
 
 ## ***Materials Used***
 ***
-* Link to Trello: https://trello.com/b/Uy6MnUay/med-minder
+* Link to Trello: [Med-MinderTrello](https://trello.com/b/Uy6MnUay/med-minder)
+* Link to Hierarchy Map: [Med-MinderHierarchy](https://lucid.app/lucidchart/65dce995-fc29-4500-88b6-368fd29ebefe/edit?viewport_loc=-533%2C-48%2C3216%2C1380%2C0_0&invitationId=inv_8a627d8e-6320-47f8-8e46-3e99abf69e8b)
+* Link to ERD Map: [Med-MinderERD](https://lucid.app/lucidchart/608481f0-02a7-40cf-8584-628951c80f23/edit?viewport_loc=-812%2C176%2C3216%2C1380%2C0_0&invitationId=inv_1514250d-7288-44b6-8525-460f9f7bae5b)
 
 ## ***Future Features***
 * Create the prescription input as a text area
