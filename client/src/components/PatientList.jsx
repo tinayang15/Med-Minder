@@ -24,7 +24,7 @@ const PatientList = () => {
             <h1 className='patientListTitle'> Patient List</h1>
             <div className='list'>
                 {patients.map((patient) => (
-                    <div key='patient._id' >
+                    <div key='patient._id'>
                         <Patient patient={patient} />
                     </div>
                 ))
