@@ -36,6 +36,8 @@
 * [morgan](https://www.npmjs.com/package/morgan) - For logging HTTP requests.
 * [Surge](https://surge.sh/) - To upload HTML/CSS/JS files as a http Link
 * [Heroku](https://www.heroku.com) - To deploy app
+* [Favicon](https://favicon.io/favicon-converter/) - To create favicon icon
+* [ReactIcons](https://www.npmjs.com/package/react-icons) - To create Trash Icon for deleting function
 
 ## ***Materials Used***
 ***
