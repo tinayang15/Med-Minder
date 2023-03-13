@@ -1,5 +1,5 @@
 # Med-Minder
-## Date: January 20, 2023
+## Date: Febuary 8, 2023
 ### By: Tina Yang
 #### [LinkedIn](https://www.linkedin.com/in/yang-tina/) l [GitHub](https://github.com/tinayang15)
 
