@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useState } from 'react'
-import '../NewPatient.css'
+// import '../NewPatient.css'
 
 const NewPatient = () => {
 
@@ -10,6 +10,7 @@ const NewPatient = () => {
     const [newPatient, setNewPatient] = useState({
         name: '',
     })
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()

@@ -3,13 +3,13 @@ import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-const MedicationList = ({ }) => {
+const MedicationList = () => {
     const [medications, setMedications] = useState([])
     const { patientId } = useParams()
 
     const getPatientIdMedications = async (e) => {
         try {
-            let res = await axios.get(`/home/patients/${patientId}/medications`)
+            const res = await axios.get(`/home/patients/${patientId}/medications`)
             setMedications(res.data)
         } catch (err) {
             console.log(err)
