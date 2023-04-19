@@ -13,7 +13,7 @@ const Medication = ({ medication, patientId, getPatient }) => {
         <div className='medicationsSingle'>
             <div className='medicationNameButton'>
                 <h3 className='medicationName'>Medication Name: {medication.Name}</h3>
-                <Link to={`/medicationslist/${patientId}/update/${medication}`} state={{ meds: medication }}>
+                <Link to={`/medicationslist/${patientId}/update/${medication._id}`} state={{ meds: medication }}>
                     <button className='updateMedicationButton'>Update Medication</button>
                 </Link>
 
