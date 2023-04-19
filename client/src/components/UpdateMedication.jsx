@@ -6,7 +6,6 @@ const UpdateMedication = () => {
     let navigate = useNavigate()
     const location = useLocation()
     const { meds } = location.state
-    const { medication } = useParams()
     const { patientId } = useParams()
 
     const [updateMedication, setUpdateMedication] = useState({ Name: `${meds.Name}`, Dose: `${meds.Dose}`, Prescription: `${meds.Prescription}`, patientId: `${patientId}` })
